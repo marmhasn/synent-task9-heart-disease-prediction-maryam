@@ -76,6 +76,8 @@ synent-task9-heart-disease-prediction-system-maryam
 ├── app.py
 ├── requirements.txt
 └── README.md
+
+
 ▶️ How to Run Locally
 Clone the Repository
 git clone <repository-link>
@@ -83,13 +85,8 @@ Install Dependencies
 pip install -r requirements.txt
 Run the Streamlit Application
 streamlit run app.py
-📷 Screenshots
 
-Add screenshots of:
 
-Data Analysis Visualizations
-Model Evaluation Results
-Streamlit Application Interface
 👩‍💻 Author
 
 Maryam
