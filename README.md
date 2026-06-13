@@ -1,74 +1,129 @@
-❤️ Heart Disease Prediction System
+# ❤️ Heart Disease Prediction System
 
-📌 Project Overview
+## 📌 Project Overview
 
-The Heart Disease Prediction System is a machine learning project designed to predict the likelihood of heart disease based on patient health information. The project includes data preprocessing, exploratory data analysis, model training, evaluation, and deployment through an interactive Streamlit web application.
+The Heart Disease Prediction System is an end-to-end Machine Learning project developed to predict the likelihood of heart disease based on patient medical information.
 
-Users can enter medical information such as age, cholesterol level, blood pressure, and other health indicators to receive a prediction along with a confidence score.
+This project covers the complete Data Science workflow, including data preprocessing, exploratory data analysis (EDA), model training, model evaluation, and deployment using Streamlit.
 
-🎯 Objective
+Users can enter medical parameters through an interactive web interface and instantly receive a heart disease prediction along with the model's confidence score.
 
-To develop a reliable machine learning model that can assist in predicting heart disease risk and make it accessible through a simple and user-friendly web application.
+---
 
-📊 Dataset
+## 🚀 Live Demo
 
-The dataset contains patient medical records with various health-related features and a target variable indicating whether heart disease is present.
+**Streamlit Application:**
 
-Features Used
-Age
-Sex
-Chest Pain Type (cp)
-Resting Blood Pressure (trestbps)
-Cholesterol (chol)
-Fasting Blood Sugar (fbs)
-Resting ECG Results (restecg)
-Maximum Heart Rate Achieved (thalach)
-Exercise-Induced Angina (exang)
-ST Depression (oldpeak)
-Slope
-Number of Major Vessels (ca)
-Thalassemia (thal)
-Target Variable
-0 → No Heart Disease
-1 → Heart Disease Present
-🛠️ Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Joblib
-Streamlit
-🤖 Model Development
+https://synent-task9-heart-disease-prediction-maryam-xrcskr7jsukds854c.streamlit.app/
 
-Several machine learning models were trained and evaluated to identify the best-performing approach for heart disease prediction.
+---
 
-Model	Accuracy
-Logistic Regression	80.33%
-Random Forest Classifier	83.61%
-Decision Tree Classifier	73.77%
-Best Model
+## 🎯 Objective
 
-Random Forest Classifier
+To develop a machine learning model capable of predicting heart disease risk using patient health data and deploy it through a user-friendly web application.
 
-Accuracy: 83.61%
+---
 
-The trained model was saved and integrated into the Streamlit application for real-time predictions.
+## 📊 Dataset
 
-🌐 Streamlit Application
+The dataset contains patient medical records and health-related attributes commonly used for heart disease prediction.
 
-The project was deployed as a Streamlit web application, allowing users to:
+### Features Used
 
-Enter patient health information
-Generate heart disease predictions instantly
-View prediction confidence levels
-Interact with a simple and intuitive interface
+* Age
+* Sex
+* Chest Pain Type (cp)
+* Resting Blood Pressure (trestbps)
+* Cholesterol (chol)
+* Fasting Blood Sugar (fbs)
+* Resting ECG Results (restecg)
+* Maximum Heart Rate Achieved (thalach)
+* Exercise-Induced Angina (exang)
+* ST Depression (oldpeak)
+* Slope
+* Number of Major Vessels (ca)
+* Thalassemia (thal)
 
-The application loads the trained machine learning model and provides predictions based on user input in real time.
+### Target Variable
 
-📂 Project Structure
-synent-task9-heart-disease-prediction-system-maryam
+* **0** → No Heart Disease
+* **1** → Heart Disease Present
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Joblib
+* Streamlit
+
+---
+
+## 🔍 Data Preprocessing
+
+The following preprocessing steps were performed:
+
+* Dataset inspection
+* Missing value analysis
+* Duplicate value detection
+* Removal of duplicate records
+* Feature selection
+* Data preparation for model training
+
+---
+
+## 📈 Exploratory Data Analysis (EDA)
+
+Several visualizations were created to better understand the dataset, including:
+
+* Target variable distribution
+* Age distribution analysis
+* Gender-wise heart disease analysis
+* Correlation heatmap
+* Feature importance visualization
+
+---
+
+## 🤖 Machine Learning Models
+
+The following models were trained and evaluated:
+
+| Model                    | Accuracy |
+| ------------------------ | -------- |
+| Logistic Regression      | 80.33%   |
+| Random Forest Classifier | 83.61%   |
+| Decision Tree Classifier | 73.77%   |
+
+### Best Performing Model
+
+**Random Forest Classifier**
+
+Accuracy Achieved: **83.61%**
+
+The Random Forest model was selected as the final model and saved using Joblib for deployment.
+
+---
+
+## 🌐 Streamlit Web Application
+
+The deployed Streamlit application allows users to:
+
+* Enter patient health information
+* Generate real-time heart disease predictions
+* View prediction confidence scores
+* Interact with a simple and user-friendly interface
+
+---
+
+## 📂 Project Structure
+
+```text
+synent-task9-heart-disease-prediction-maryam
 
 ├── heart_disease_project.ipynb
 ├── heart.csv
@@ -76,17 +131,36 @@ synent-task9-heart-disease-prediction-system-maryam
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-▶️ How to Run Locally
-Clone the Repository
-git clone <repository-link>
-Install Dependencies
+## ▶️ Running the Project Locally
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Run the Streamlit Application
+```
+
+### Run Streamlit App
+
+```bash
 streamlit run app.py
+```
 
+---
 
-👩‍💻 Author
+## 📷 Project Outputs
 
-Maryam
+* Data Cleaning and Preprocessing
+* Exploratory Data Analysis
+* Model Comparison and Evaluation
+* Feature Importance Analysis
+* Streamlit Web Application Deployment
+
+---
+
+## 👩‍💻 Author
+
+**Maryam**
